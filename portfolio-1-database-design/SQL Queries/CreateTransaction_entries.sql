@@ -21,4 +21,5 @@ CREATE TABLE transaction_entries (
     CONSTRAINT fk_entry_account
         FOREIGN KEY (account_id)
         REFERENCES accounts(account_id)
+        );
 

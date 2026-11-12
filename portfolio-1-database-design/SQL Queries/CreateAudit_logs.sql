@@ -13,3 +13,4 @@ CREATE TABLE audit_logs (
     CONSTRAINT fk_audit_customer
         FOREIGN KEY (customer_id)
         REFERENCES customers(customer_id)
+        );

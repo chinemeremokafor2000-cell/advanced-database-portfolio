@@ -17,3 +17,4 @@ CREATE TABLE beneficiaries (
 
     CONSTRAINT unique_customer_beneficiary
         UNIQUE (customer_id, beneficiary_account_number, bank_name)
+        );

@@ -16,3 +16,4 @@ CREATE TABLE cards (
     CONSTRAINT fk_card_account
         FOREIGN KEY (account_id)
         REFERENCES accounts(account_id)
+        );

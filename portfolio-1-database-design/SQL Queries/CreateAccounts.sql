@@ -15,3 +15,5 @@ CREATE TABLE accounts (
     CONSTRAINT fk_account_customer
         FOREIGN KEY (customer_id)
         REFERENCES customers(customer_id)
+);
+

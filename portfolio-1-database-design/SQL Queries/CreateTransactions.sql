@@ -16,3 +16,4 @@ CREATE TABLE transactions (
 
     transaction_status VARCHAR(20) DEFAULT 'Pending'
         CHECK (transaction_status IN ('Pending', 'Successful', 'Failed', 'Reversed'))
+        );
