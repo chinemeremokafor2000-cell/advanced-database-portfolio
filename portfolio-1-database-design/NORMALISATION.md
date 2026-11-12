@@ -70,3 +70,24 @@ The NovaBank database separates customers, accounts, cards, beneficiaries, trans
 The design follows the principles of 1NF, 2NF and 3NF by maintaining atomic values, using primary keys and separating entities according to their relationships.
 
 This provides a structured relational database suitable for supporting the core operations of a digital banking system.
+## 7. Normalisation Validation
+
+The NovaBank database was reviewed against the requirements of First, Second and Third Normal Forms.
+
+| Normalisation Rule | Validation for NovaBank | Finding |
+|---|---|---|
+| 1NF | Attributes are stored in individual columns, and multiple accounts or transaction entries are represented as separate records. | Satisfied based on the implemented structure. |
+| 2NF | Tables use single-column primary keys, with non-key attributes associated with their respective records. | No partial dependencies identified in the reviewed structures. |
+| 3NF | Customer, account, card, beneficiary, transaction and audit information are maintained in separate related tables. | The design supports 3NF; functional dependencies require final verification. |
+
+### Validation Observations
+
+1. Customer information is maintained in the Customers table rather than repeatedly stored in account and transaction records.
+2. Account information is separated from card information through the Accounts and Cards tables.
+3. Transaction headers are separated from individual debit and credit entries through Transactions and Transaction_Entries.
+4. Beneficiary and audit information are maintained independently and linked to customers through foreign keys.
+5. Primary keys, foreign keys and additional constraints support record identification and referential integrity.
+
+### Conclusion
+
+The NovaBank database follows the structural principles of 1NF, 2NF and 3NF. The separation of business entities reduces unnecessary duplication and supports data consistency. The final functional dependency review is required to formally establish that every relation satisfies 3NF.
