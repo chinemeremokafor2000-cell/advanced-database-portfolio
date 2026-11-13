@@ -1,0 +1,33 @@
+
+[
+  {
+    "transaction_reference": "NVB-NOSQL-001",
+    "customer_id": 1,
+    "transaction_type": "Deposit",
+    "amount": 100000,
+    "currency": "NGN",
+    "description": "Customer account deposit",
+    "transaction_status": "Successful",
+    "transaction_date": "2026-11-13T08:00:00Z"
+  },
+  {
+    "transaction_reference": "NVB-NOSQL-002",
+    "customer_id": 2,
+    "transaction_type": "Withdrawal",
+    "amount": 25000,
+    "currency": "NGN",
+    "description": "ATM cash withdrawal",
+    "transaction_status": "Successful",
+    "transaction_date": "2026-11-13T08:15:00Z"
+  },
+  {
+    "transaction_reference": "NVB-NOSQL-003",
+    "customer_id": 3,
+    "transaction_type": "Transfer",
+    "amount": 50000,
+    "currency": "NGN",
+    "description": "Interbank transfer",
+    "transaction_status": "Successful",
+    "transaction_date": "2026-11-13T08:30:00Z"
+  }
+]

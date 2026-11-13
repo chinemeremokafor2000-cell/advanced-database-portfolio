@@ -1,0 +1,60 @@
+
+[
+  {
+    "customer_id": 1,
+    "first_name": "Ada",
+    "last_name": "Okafor",
+    "email": "ada.okafor@example.com",
+    "phone": "08030000001",
+    "customer_status": "Active",
+    "accounts": [
+      {
+        "account_id": 1,
+        "account_type": "Savings",
+        "currency": "NGN",
+        "current_balance": 2811500,
+        "account_status": "Active"
+      }
+    ],
+    "beneficiaries": [
+      {
+        "beneficiary_name": "David James",
+        "bank_name": "NovaBank"
+      }
+    ]
+  },
+  {
+    "customer_id": 2,
+    "first_name": "David",
+    "last_name": "James",
+    "email": "david.james@example.com",
+    "phone": "08030000002",
+    "customer_status": "Active",
+    "accounts": [
+      {
+        "account_type": "Current",
+        "currency": "NGN",
+        "current_balance": 0,
+        "account_status": "Active"
+      }
+    ],
+    "beneficiaries": []
+  },
+  {
+    "customer_id": 3,
+    "first_name": "Mary",
+    "last_name": "Bello",
+    "email": "mary.bello@example.com",
+    "phone": "08030000003",
+    "customer_status": "Active",
+    "accounts": [
+      {
+        "account_type": "Savings",
+        "currency": "NGN",
+        "current_balance": 0,
+        "account_status": "Active"
+      }
+    ],
+    "beneficiaries": []
+  }
+]
